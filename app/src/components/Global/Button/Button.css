@@ -1,0 +1,44 @@
+.btn {
+  display: inline-block;
+  border: 0.1rem solid #1E3A8A;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.6rem 1.25rem;
+  cursor: pointer;
+  transition: 0.2s color ease-in;
+  text-decoration: none;
+}
+
+.btn--primary {
+  background: #1E3A8A;
+  color: white;
+}
+
+.btn--secondary {
+  background: #FF7F50;
+  color: white;
+
+}
+
+.btn--alert {
+  background: #ffe6e6;
+  color: #450707;
+}
+
+.btn--third {
+  background: white;
+  color: #1E3A8A;
+  border: 0.1rem solid #1E3A8A;
+}
+
+.btn--third:hover {
+  background: #1E3A8A;
+  color: white;
+  border: 0.1rem solid white;
+}
+
+.btn--primary:hover {
+  background: white;
+  border: 0.1rem solid #1E3A8A;
+  color: #1E3A8A;
+}

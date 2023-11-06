@@ -1,0 +1,97 @@
+.zoekbalk {
+  background: #e2e5e7ba;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  top: 0;
+  transform: translateY(0);
+}
+
+.zoekbalk-item {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15%;
+  margin: 0.5rem;
+}
+
+.zoekbalk-item label {
+  font-weight: bold;
+}
+
+.zoekbalk-item input, .zoekbalk-item select {
+  background: white;
+  border: 0.1rem solid lightgray;
+}
+
+.zoekbalk-item input::selection, .zoekbalk-item select::selection {
+  background: white;
+  border: 0.1rem solid orange;
+}
+.zoekbalk.div {
+  background: green;
+}
+
+.title__tekoop {
+  text-align: center;
+  background: #ECEFF1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.back {
+  text-decoration: none;
+  color: #FF7F50;
+}
+.resultaten {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.resultaten-item {
+  cursor: pointer;
+}
+
+.resultaten-item.active {
+  font-weight: bold;
+  color: #FF7F50;
+}
+.listItem-data {
+  background: rgb(241, 239, 239);
+  color: #1E3A8A;
+  order: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.listItem-image {
+  order: 0;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.listItem-image:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 400px) {
+  .resultaten {
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid #1E3A8A;
+  }
+  .resultaten-item {
+    margin: 0.5rem;
+  }
+}

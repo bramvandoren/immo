@@ -1,0 +1,13 @@
+.textarea {
+  border: 1px solid #fefefe;
+  background: #eee;
+  border-radius: 0.25rem;
+  padding: 0.7rem;
+  width: 50%;
+}
+
+.textarea[type="search"] {
+  border-radius: 1.25rem;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+}

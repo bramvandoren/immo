@@ -1,0 +1,52 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 5vh;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50vw;
+}
+.info {
+  background: #ECEFF1;
+  width: 30vw;
+}
+
+.info p, .info h2 {
+  margin-left: 1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.light {
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+.underline {
+  text-decoration: underline;
+}
+.voorwaarden {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact form {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5vh;
+  }
+  .info {
+    width: 90vw;
+  }
+}

@@ -1,0 +1,43 @@
+.footer {
+  background: #1E3A8A;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  margin-top: 10vh;
+}
+.bold {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.facebook {
+  display: inline-block;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  background-color: #3b5998;
+  border-radius: 50%;
+}
+.instagram {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #e4405f;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+  }
+}

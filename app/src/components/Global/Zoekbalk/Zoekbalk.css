@@ -1,0 +1,36 @@
+/* .zoekbalk {
+  background: #e2e5e7ba;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.zoekbalk-item {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15%;
+  margin: 0.5rem;
+}
+
+.zoekbalk-item label {
+  font-weight: bold;
+}
+
+.zoekbalk-item input, .zoekbalk-item select {
+  background: white;
+  border: 0.1rem solid lightgray;
+}
+
+.zoekbalk-item input::selection, .zoekbalk-item select::selection {
+  background: white;
+  border: 0.1rem solid orange;
+} */

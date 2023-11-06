@@ -1,0 +1,309 @@
+.listItem-data {
+  background: rgb(241, 239, 239);
+  color: #1E3A8A;
+  order: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.listItem-image {
+  order: 0;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.listItem-image:hover {
+  transform: scale(1.1);
+}
+
+.hero {
+  background-image: url(../../../public/images/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+}
+
+.hero__title {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  padding-top: 2rem;
+
+}
+
+h2 {
+  color: #1E3A8A;
+}
+.zoekbalk {
+  background: #e2e5e7ba;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 5vh;
+  flex-wrap: wrap;
+}
+
+.zoekbalk-item {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15%;
+  margin: 0.5rem;
+}
+
+.zoekbalk-item label {
+  font-weight: bold;
+}
+
+.zoekbalk-item input, .zoekbalk-item select {
+  background: white;
+  border: 0.1rem solid lightgray;
+}
+
+.zoekbalk-item input::selection, .zoekbalk-item select::selection {
+  background: white;
+  border: 0.1rem solid orange;
+}
+
+.type__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.image {
+  width: 100%;
+}
+
+.types {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.types a {
+  text-decoration: none;
+}
+
+.houses__type {
+  width: 30vw;
+  background: #ECEFF1;
+  color: white;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 1rem;
+  border: 0.1rem solid #1E3A8A;
+}
+
+
+.houses__type-titel {
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1E3A8A;
+  text-decoration: none;
+}
+
+.listItem-type {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  flex-basis: 45%;
+  margin: 0.5rem;
+}
+.listItem-price {
+  color: #1E3A8A;
+  flex-basis: 40%;
+  margin: 0.5rem;
+}
+.listItem-opp {
+  color: #1E3A8A;
+  flex-basis: 45%;
+  margin: 0.5rem;
+}
+
+.diensten {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.diensten__image {
+  width: 50vw;
+  height: 40vh;
+  object-fit: cover;
+  margin-right: -20vw;
+  z-index: 2;
+}
+
+.diensten__text {
+  width: 70vw;
+  height: 50vh;
+  background: #ECEFF1;
+  margin-left: 15vw;
+  z-index: 1;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+
+.diensten__text p, .diensten__text h2 {
+  margin-left: 20%;
+}
+
+.button-container {
+  width: 100%;
+  text-align: center;
+}
+
+.zoekbalk-item:nth-child(1) {
+  margin-left: 1rem;
+}
+
+.zoekbalk__arrow {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .zoekbalk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    top: auto;
+    position: relative;
+    left: auto;
+    transform: none;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+  
+  .zoekbalk-item {
+    flex: 0 0 40%;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .button-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .diensten {
+    font-size: 1rem;
+  }
+
+  .diensten__text {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .hero__title {
+    width: 90%;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .diensten__text {
+    font-size: 0.7rem;
+    margin: 0 auto;
+    width: 80vw;
+    height: 40vh;
+  }
+
+  .hero {
+    height: 100%;
+    padding-bottom: 5vh;
+  }
+  .hero__title {
+    /* background-image: url(../../../public/images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    padding-top: 0;
+  }
+
+  .diensten__text p, .diensten__text h2 {
+    margin-left: 0;
+  }
+
+  .diensten {
+    flex-direction: column-reverse;
+  }
+
+  .diensten__image {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .zoekbalk {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .zoekbalk {
+    flex-direction: column;
+  }
+  .zoekbalk-item {
+    width: 90%;
+  }
+  .zoekbalk-item:nth-child(1) {
+    margin-left: 0;
+  }
+  .zoekbalk__arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 3rem;
+    rotate: (-90deg);
+  }
+  .zoekbalk__arrow span {
+    rotate: (90deg);
+  }
+  .hero__title {
+    width: 90%;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .diensten__text {
+    height: 50vh;
+  }
+
+  .types {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .houses__type {
+    width: 70vw;
+    height: 10vh;
+  }
+}

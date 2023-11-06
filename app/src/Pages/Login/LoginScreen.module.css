@@ -1,0 +1,51 @@
+.error {
+    background-color: rgb(201, 10, 10);
+    color: wheat;
+    padding: 1rem .5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 10rem;
+    border-radius: .2rem;
+    text-align: center;
+}
+
+
+
+.input {
+    border: 0.1rem solid grey;
+}
+
+.login_register {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.login_register div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid #ECEFF1;
+    padding: 0rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.or {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+@media screen and (max-width: 450px) {
+    .login_register {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

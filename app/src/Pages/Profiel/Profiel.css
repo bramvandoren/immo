@@ -1,0 +1,25 @@
+.listItem-data {
+  background: rgb(241, 239, 239);
+  color: #1E3A8A;
+  order: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.listItem-image {
+  order: 0;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.listItem-image:hover {
+  transform: scale(1.1);
+}
